@@ -1,0 +1,89 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../imgs/background.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: 'Zen Dots', cursive;
+  max-width: 50%;
+}
+
+.timer span {
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.timer input {
+  font-family: 'Zen Dots', cursive;
+  border: none;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+  width: 180px;
+  height: 120px;
+  font-size: 5rem;
+  color: white;
+  background-color: #061623;
+  background-image: url(../imgs/svg.png);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  filter: drop-shadow(2px 4px 6px black);
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.timer input:focus {
+  outline: none;
+}
+
+.timer input:disabled {
+  opacity: .9;
+}
+
+.controls {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.controls i {
+  cursor: pointer;
+  transition: .3s;
+  color: transparent;
+  -webkit-text-stroke: 1.5px white;
+  font-size: 56px;
+}
+
+.controls .flipped {
+  animation: scale .3s ease-out;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.6);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+}

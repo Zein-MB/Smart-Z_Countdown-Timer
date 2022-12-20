@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart-Z Countdown Timer</title>
+  <link rel="icon" href="./imgs/time.png">
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Courgette&family=Fraunces:opsz,wght@9..144,500&family=Fredoka+One&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumbh+Sans:wght@400;700&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@100;200;300;400;500;700;900&family=Nokora:wght@300;400;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Paytone+One&family=Poppins:wght@400;600&family=Yanone+Kaffeesatz:wght@700&family=Zen+Dots&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="timer">
+    <input type="number" id="hours" value="0" min="0">
+    <span>:</span>
+    <input type="number" id="mins" value="0" min="0">
+    <span>:</span>
+    <input type="number" id="secs" value="0" min="0">
+  </div>
+  <div class="controls">
+    <i class="fa fa-play-circle"></i>
+    <i class="fa fa-pause-circle"></i>
+    <i class="fa fa-stop-circle"></i>
+  </div>
+  <embed style="display: none;" src="./audio/life.mp3" autostart="true" loop="0" width="2" height="0"></embed>
+  <script src="script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
